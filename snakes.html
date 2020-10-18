@@ -1,0 +1,69 @@
+<!DOCTYPE html> 
+<html>
+<head>
+  <title>Plastic & Eels</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <link href="snakes.min.css" media="screen, print" rel="stylesheet" type="text/css" /> 
+</head> 
+ 
+<body seamless="seamless"> 
+  
+  <div id="snakes">
+
+    <img src='s.gif' class='watermark top'>
+    <img src='s.gif' class='watermark left'>
+    <img src='s.gif' class='watermark right'>
+
+    <div id='sound' class='on' title='toggle music and fx' style='display:none;'></div>
+
+    <div id="score">
+      <span class="current"><span class='label'>Score: </span><span class="value">000000</span></span>
+      <span class="high"><span class='label'>High: </span><span class="value">000000</span></span>
+    </div>
+
+    <canvas id="canvas">
+      <div class='unsupported'>
+        Sorry, this example cannot be run because your browser does not support the &lt;canvas&gt; element
+      </div>
+    </canvas>
+
+    <div id="overlay">
+
+      <img id="logo" src="images/eellogo9.png">
+
+      <div id="loading" class='menu' style='display:none;'>
+        <h1>Loading...</h1>
+      </div>
+
+      <div id="highscores" class='menu' style='display:none;'>
+        <h1>High Scores</h1>
+        <ul></ul>
+      </div>
+
+      <div id="credits" class='menu' style='display:none;'>
+        <ul>
+          <!-- CREDITS -->
+          <!-- <li class='author'>Created by <a target="_credits" href="http://codeincomplete.com/posts/2011/8/5/starting_snakes/">Vandan Bhatt</a></li>-->
+          <!-- CREDITS -->
+          <li><span class='key'><br>As the planet is hit with increasingly extreme droughts, we are reminded that water is crucial to life. It is an essential resource upon which all living beings depend on and is needed to sustain social and economic development, as well as energy production and adaptation to climate change. However, we are now facing a gigantic challenge. How do we stop contaminating our rivers, seas, oceans, canals, lakes and reservoirs?  </span></li>
+          <li><span class='key'><br>Eel is a Snake replica designed to spread awareness of all the pollution in our waterways. In this game you are an Eel, and the objective is to eat all the plastic/rubbish that appears in the lake. Have fun playing this game with your friends and classmates.</span></li>        
+          <li><span class='key'><br> You can help spread awarness by visiting and sharing this link <a target="_credits" href="https://www.earthday.org/what-you-can-do-to-end-plastic-pollution/">HERE</a></span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="help">
+      (Game Created by Vandan Bhatt)
+    </div>
+
+  </div>
+
+  <script src="snakes.min.js"></script>
+  <script>
+  Game.ready(function() {
+    game = Snakes();
+  });
+  </script>
+
+</body> 
+</html>
